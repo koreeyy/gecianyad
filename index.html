@@ -1,12 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>koreeyyboss</title>
+    <title>SCAM</title>
     <link
       rel="icon"
-      type="image/gif"
-      href="https://media.discordapp.net/attachments/914333550839488572/915421699728609310/christianity.png"
+      type="image/png"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Snooker_Triple_Crown_icon_full.svg/2433px-Snooker_Triple_Crown_icon_full.svg.png"
     />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="koreeyy" />
@@ -17,13 +17,89 @@
     <meta name="theme-color" content="#FF0000">
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://kysu.hu/assets/js/BlockInspect.js"></script>
+
     <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
       .unselectable {
         -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
+      }
+
+      .socials {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .social-icon {
+        position: relative;
+        display: inline-block;
+        transition: 0.3s;
+      }
+
+      .social-icon img {
+        width: 45px;
+        height: 45px;
+        filter: invert(1);
+        transition: 0.3s;
+      }
+
+      .social-icon:hover img {
+        transform: scale(1.2);
+        filter: invert(1) drop-shadow(0 0 10px white);
+      }
+
+      .tooltip-text {
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(200, 200, 200, 0.15);
+        color: white;
+        font-family: mono;
+        font-size: 0.8em;
+        padding: 6px 12px;
+        border-radius: 10px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        text-shadow: 0 0 5px #fff;
+        backdrop-filter: blur(3px);
+      }
+
+      .social-icon:hover .tooltip-text {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-5px);
+      }
+
+      /* 💸 GIF pénzeső a koreeyy körül */
+      .money-gif {
+        position: absolute;
+        top: -50px;
+        width: 32px;
+        height: 32px;
+        animation: fall linear infinite;
+        z-index: 9999;
+        pointer-events: none;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(300px);
+          opacity: 0;
+        }
+      }
+
+      /* A koreeyy szöveg konténere – a pénzeső itt történik */
+      .koreeyy-container {
+        position: relative;
+        display: inline-block;
       }
     </style>
   </head>
@@ -36,88 +112,75 @@
           audio.volume = 0.0;
           audio.play();
         }
+
         function videoPlay() {
           var video = document.getElementById("video");
-          (video.volume = 1), 0;
+          video.volume = 1;
           video.play();
         }
+
+        function createMoneyRain() {
+          const container = document.getElementById("koreeyy-container");
+
+          setInterval(() => {
+            const gif = document.createElement("img");
+            gif.src = "https://cdn.pixabay.com/animation/2023/06/08/15/03/15-03-45-927_512.gif";
+            gif.classList.add("money-gif");
+
+            // Szűk random bal pozíció a containeren belül
+            gif.style.right = Math.random() * container.offsetWidth + "px";
+            gif.style.animationDuration = 0.5 + Math.random() * 6 + "s";
+
+            container.appendChild(gif);
+
+            // Eltávolítás pár másodperc után
+            setTimeout(() => gif.remove(), 5000);
+          }, 200);
+        }
+
+        function startExperience() {
+          audioPlay();
+          videoPlay();
+          createMoneyRain();
+        }
       </script>
-      <input type="checkbox" autocomplete="off" id="overlay-toggle" />
+
       <input type="checkbox" autocomplete="off" id="overlay-toggle" />
       <div class="overlay fullscreen">
-        <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
-          <span class="no-hover" style="font-family: mono; font-size: 0.6em"
-            >tap to enter</span
-          >
-          <span class="hover" style="font-family: mono; font-size: 0.6em"
-            >click to enter</span
-          >
+        <label for="overlay-toggle" onclick="startExperience()">
+          <span class="no-hover" style="font-family: mono; font-size: 0.6em">tap to enter</span>
+          <span class="hover" style="font-family: mono; font-size: 0.6em">click to enter</span>
         </label>
       </div>
-      <audio loop="" preload="auto" id="audio">
-        <source src="assets/images/video.mp4" type="audio/mp3" />
+
+      <audio loop preload="auto" id="audio">
+        <source src="https://r2.guns.lol/7e912b54-640b-490b-a6ac-03b6e1e585a4.mp4" type="audio/mp3" />
       </audio>
-      <video
-        loop=""
-        playsinline=""
-        preload="auto"
-        class="fullscreen bg-video"
-        id="video"
-      >
-        <source src="assets/images/video.mp4" type="video/mp4" />
+
+      <video loop playsinline preload="auto" class="fullscreen bg-video" id="video">
+        <source src="https://r2.guns.lol/7e912b54-640b-490b-a6ac-03b6e1e585a4.mp4" type="video/mp4" />
       </video>
+
       <section class="fullscreen text-content">
-        <h1
-          class="unselectable"
-          style="font-family: derk; text-shadow: 0 0 0.4em #bababa"
-        >
-          koreeyy
-        </h1>
+        <div id="koreeyy-container" class="koreeyy-container">
+          <h1 class="unselectable" style="font-family: derk; text-shadow: 0 0 0.4em #bababa">
+            koreeyy
+          </h1>
+        </div>
+
         <div class="socials">
-          <a
-            href="https://steamcommunity.com/id/pufbar"
-            class="unselectable"
-            style="
-              text-decoration: none;
-              font-family: mono;
-              font-size: 1.1em;
-              text-shadow: 0 0 0.4em #bababa;
-            "
-            >steam</a
-          >
-          <a
-            href="https://www.instagram.com/bosskoreeyy/"
-            class="unselectable"
-            style="
-              text-decoration: none;
-              font-family: mono;
-              font-size: 1.1em;
-              text-shadow: 0 0 0.4em #bababa;
-            "
-            >instagram</a
-          >
-          <a
-            href="https://www.tiktok.com/@bosskoreeyy?lang=hu-HU"
-            class="unselectable"
-            style="
-              text-decoration: none;
-              font-family: mono;
-              font-size: 1.1em;
-              text-shadow: 0 0 0.4em #bababa;
-            "
-            >tiktok</a
-          >
-          <a
-            href="https://www.youtube.com/@koreeyyboss"
-            class="unselectable"
-            style="
-              text-decoration: none;
-              font-family: mono;
-              font-size: 1.1em;
-              text-shadow: 0 0 0.4em #bababa;
-            "
-            >youtube</a
-          >
+          <a href="https://steamcommunity.com/groups/versace1/members" target="_blank" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/steam.svg" alt="Steam" />
+          </a>
+          <a href="https://www.instagram.com/bosskoreeyy/" target="_blank" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://www.roblox.com/users/128314211/profile" target="_blank" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/roblox.svg" alt="Roblox" />
+          </a>
+          <a href="https://discord.gg/expQQU4BDs" target="_blank" class="social-icon">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord" />
+          </a>
         </div>
       </section>
     </main>
