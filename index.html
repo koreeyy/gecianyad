@@ -78,28 +78,23 @@
         transform: translateX(-50%) translateY(-5px);
       }
 
-      /* 💸 GIF pénzeső a koreeyy körül */
+      /* 💸 teljes képernyős pénzeső */
       .money-gif {
-        position: absolute;
-        top: -50px;
-        width: 32px;
-        height: 32px;
-        animation: fall linear infinite;
-        z-index: 9999;
+        position: fixed;
+        top: -60px;
+        width: 40px;
+        height: 40px;
+        animation: fall linear forwards;
         pointer-events: none;
+        opacity: 0.9;
+        z-index: 10;
       }
 
       @keyframes fall {
         to {
-          transform: translateY(300px);
+          transform: translateY(110vh) rotate(360deg);
           opacity: 0;
         }
-      }
-
-      /* A koreeyy szöveg konténere – a pénzeső itt történik */
-      .koreeyy-container {
-        position: relative;
-        display: inline-block;
       }
     </style>
   </head>
@@ -120,22 +115,22 @@
         }
 
         function createMoneyRain() {
-          const container = document.getElementById("koreeyy-container");
-
           setInterval(() => {
             const gif = document.createElement("img");
             gif.src = "https://shopbh4l.com/cdn/shop/files/BH4L.png?v=1734042044&width=600";
             gif.classList.add("money-gif");
 
-            // Szűk random bal pozíció a containeren belül
-            gif.style.right = Math.random() * container.offsetWidth + "px";
-            gif.style.animationDuration = 0.5 + Math.random() * 6 + "s";
+            // random pozíció és méret
+            gif.style.left = Math.random() * window.innerWidth + "px";
+            gif.style.width = 25 + Math.random() * 60 + "px";
+            gif.style.animationDuration = 4 + Math.random() * 6 + "s";
+            gif.style.transform = `rotate(${Math.random() * 360}deg)`;
 
-            container.appendChild(gif);
+            document.body.appendChild(gif);
 
-            // Eltávolítás pár másodperc után
-            setTimeout(() => gif.remove(), 5000);
-          }, 200);
+            // eltávolítás pár másodperc után
+            setTimeout(() => gif.remove(), 10000);
+          }, 250);
         }
 
         function startExperience() {
@@ -162,11 +157,9 @@
       </video>
 
       <section class="fullscreen text-content">
-        <div id="koreeyy-container" class="koreeyy-container">
-          <h1 class="unselectable" style="font-family: derk; text-shadow: 0 0 0.4em #bababa">
-            koreeyy
-          </h1>
-        </div>
+        <h1 class="unselectable" style="font-family: derk; text-shadow: 0 0 0.4em #bababa">
+          koreeyy
+        </h1>
 
         <div class="socials">
           <a href="https://steamcommunity.com/groups/versace1/members" target="_blank" class="social-icon">
