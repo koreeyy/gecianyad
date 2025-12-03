@@ -104,13 +104,13 @@
       <script>
         function audioPlay() {
           var audio = document.getElementById("audio");
-          audio.volume = 0.0;  // Set audio volume to 0 to make sure the sound is played only through MP3
+          audio.volume = 1;  // Set audio volume to 0 to make sure the sound is played only through MP3
           audio.play();
         }
 
         function videoPlay() {
           var video = document.getElementById("video");
-          video.volume = 1; // Ensuring video has no sound, audio is handled by the MP3
+          video.volume = 0; // Ensuring video has no sound, audio is handled by the MP3
           video.play();
         }
 
