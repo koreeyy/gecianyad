@@ -104,13 +104,13 @@
       <script>
         function audioPlay() {
           var audio = document.getElementById("audio");
-          audio.volume = 0.0;
+          audio.volume = 0.0;  // Set audio volume to 0 to make sure the sound is played only through MP3
           audio.play();
         }
 
         function videoPlay() {
           var video = document.getElementById("video");
-          video.volume = 1;
+          video.volume = 1; // Ensuring video has no sound, audio is handled by the MP3
           video.play();
         }
 
@@ -148,11 +148,12 @@
         </label>
       </div>
 
-      <!-- Audio and Video elements -->
+      <!-- Audio element now uses the provided .mp3 for sound -->
       <audio loop preload="auto" id="audio">
         <source src="https://r2.guns.lol/63a1a65d-20da-414b-995e-2c5c79ee8d4a.mp3" type="audio/mp3" />
       </audio>
 
+      <!-- Video element plays the MP4 without sound -->
       <video loop playsinline preload="auto" class="fullscreen bg-video" id="video">
         <source src="https://r2.guns.lol/88c7dd54-230a-4b19-83cc-049637f4cc7b.mp4" type="video/mp4" />
       </video>
