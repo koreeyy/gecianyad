@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" as="image" href="/assets/hero-military-VCMkaNfe.jpg"><link rel="stylesheet" href="css/styles-DEECNZo9.css" data-precedence="default"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" data-precedence="default"><title>O.N.R — Operation Northern Resolve | Military Milsim FiveM</title><meta name="description" content="A FiveM legrealisztikusabb magyar katonai szimulációja. Rangrendszer, egységek, küldetések, hiteles felszerelés."><meta name="author" content="Operation Northern Resolve"><meta property="og:title" content="O.N.R — Operation Northern Resolve | Military Milsim FiveM"><meta property="og:description" content="A FiveM legrealisztikusabb magyar katonai szimulációja. Rangrendszer, egységek, küldetések, hiteles felszerelés."><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@Lovable"><meta name="twitter:title" content="O.N.R — Operation Northern Resolve | Military Milsim FiveM"><meta name="twitter:description" content="A FiveM legrealisztikusabb magyar katonai szimulációja. Rangrendszer, egységek, küldetések, hiteles felszerelés."><meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/b2265553-32f1-45fd-a09c-4626f27cbfd9"><meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/b2265553-32f1-45fd-a09c-4626f27cbfd9"><link rel="modulepreload" href="/assets/index-BOUABeE9.js"><link rel="modulepreload" href="/assets/index-B-zXunBg.js"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg);
+		color: var(--badge-text);
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow);
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer="" src="js/~flock.js" data-proxy-url="/~api/analytics"></script></head><body><!--$--><div class="min-h-screen bg-background text-foreground"><header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/60 border-b border-border"><div class="container mx-auto flex h-16 items-center justify-between px-6"><a class="flex items-center gap-2.5 active" href="/" data-status="active" aria-current="page"><div class="grid h-9 w-9 place-items-center bg-primary text-primary-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-5 w-5" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div><div class="leading-tight"><div class="stencil text-sm">O.N.R</div><div class="text-[10px] text-muted-foreground tracking-[0.2em] uppercase">Operation Northern Resolve</div></div></a><nav class="hidden md:flex items-center gap-8"><a href="#about" class="stencil text-xs text-muted-foreground hover:text-primary transition-colors">Az alakulat</a><a href="#features" class="stencil text-xs text-muted-foreground hover:text-primary transition-colors">Lehetőségek</a><a href="#ranks" class="stencil text-xs text-muted-foreground hover:text-primary transition-colors">Frakciók</a><a href="#join" class="stencil text-xs text-muted-foreground hover:text-primary transition-colors">Csatlakozás</a></nav><a href="#join" class="stencil text-xs px-4 py-2 bg-primary text-primary-foreground hover:opacity-90 transition">Bevonulás</a></div></header><main><section class="relative min-h-screen flex items-end overflow-hidden"><img src="images/hero-military-VCMkaNfe.jpg" alt="Katonai alakulat felsorakozva alkonyatkor" width="1920" height="1080" class="absolute inset-0 h-full w-full object-cover"><div class="absolute inset-0" style="background:var(--gradient-hero)"></div><div class="absolute top-24 left-6 md:left-12 stencil text-xs text-primary/80 space-y-1"><div class="flex items-center gap-2"><span class="h-1.5 w-1.5 bg-primary animate-pulse"></span>LIVE OPS · 47.4983° N</div><div class="text-muted-foreground">SECTOR 07 // FORWARD BASE</div></div><div class="absolute top-24 right-6 md:right-12 text-right stencil text-xs text-muted-foreground space-y-1"><div>STATUS: <span class="text-accent">ONLINE</span></div><div class="flex items-center justify-end gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-3 w-3 text-primary" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>DISCORD: <span class="text-foreground">—<!-- --> / <!-- -->—</span></div><div class="flex items-center justify-end gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad2 lucide-gamepad-2 h-3 w-3 text-primary" aria-hidden="true"><line x1="6" x2="10" y1="11" y2="11"></line><line x1="8" x2="8" y1="9" y2="13"></line><line x1="15" x2="15.01" y1="12" y2="12"></line><line x1="18" x2="18.01" y1="10" y2="10"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path></svg>FIVEM: <span class="text-foreground">—<!-- --> / <!-- -->—</span></div></div><div class="relative z-10 container mx-auto px-6 pb-20 pt-32"><div class="max-w-3xl"><div class="inline-flex items-center gap-2 border border-primary/40 px-3 py-1 mb-6 stencil text-[11px] text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio h-3 w-3" aria-hidden="true"><path d="M16.247 7.761a6 6 0 0 1 0 8.478"></path><path d="M19.075 4.933a10 10 0 0 1 0 14.134"></path><path d="M4.925 19.067a10 10 0 0 1 0-14.134"></path><path d="M7.753 16.239a6 6 0 0 1 0-8.478"></path><circle cx="12" cy="12" r="2"></circle></svg> Toborzás megnyitva — 2026/Q2</div><h1 class="font-display text-5xl md:text-7xl lg:text-8xl uppercase leading-[0.9] text-foreground">Operation<br><span class="text-primary">Northern Resolve</span></h1><p class="mt-6 max-w-xl text-lg text-muted-foreground">A legrealisztikusabb magyar katonai szimuláció FiveM-en. Valódi hierarchia, kiképzés, bevetések és bajtársiasság. Itt nem játékos vagy — katona.</p><div class="mt-10 flex flex-wrap gap-3"><a href="https://discord.gg/CJ5H9yeevR" target="_blank" rel="noopener noreferrer" class="group stencil inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-4 hover:opacity-90 transition">Csatlakozás az egységhez<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-4 w-4 group-hover:translate-x-1 transition" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a><a href="#about" class="stencil inline-flex items-center gap-3 border border-border px-6 py-4 hover:border-primary hover:text-primary transition">Megbízatás megtekintése</a></div></div></div><div class="absolute bottom-0 inset-x-0 border-t border-border bg-background/80 backdrop-blur"><div class="container mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-4 stencil text-[11px] text-muted-foreground"><span>// CLASSIFIED — INTERNAL USE</span><span>FREQ 145.500 MHz</span><span>UNIT 1.B ASSAULT</span><span class="text-primary">▲ READY STATE</span></div></div></section><section id="about" class="relative py-28"><div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center"><div><div class="stencil text-xs text-primary mb-3">// 01 — DOSSZIÉ</div><h2 class="text-4xl md:text-5xl uppercase mb-6">Magyar katonai<br><span class="text-primary">milsim közösség</span></h2><p class="text-muted-foreground mb-5 leading-relaxed">Az O.N.R 2023 óta működő, szigorúan szervezett katonai roleplay közösség FiveM platformon. Tagjaink között veteránok, milsim rajongók és kezdő újoncok egyaránt találhatóak.</p><p class="text-muted-foreground mb-10 leading-relaxed">A célunk egy hiteles, immerzív katonai környezet, ahol a döntéseidnek súlya van, a bajtársaidban megbízhatsz és a küldetés a legfontosabb.</p><div class="grid grid-cols-2 sm:grid-cols-4 gap-px bg-border border border-border"><div class="bg-background p-5"><div class="font-display text-3xl text-primary">200+</div><div class="stencil text-[10px] text-muted-foreground mt-1">Aktív katona</div></div><div class="bg-background p-5"><div class="font-display text-3xl text-primary">47</div><div class="stencil text-[10px] text-muted-foreground mt-1">Lezárt misszió</div></div><div class="bg-background p-5"><div class="font-display text-3xl text-primary">12</div><div class="stencil text-[10px] text-muted-foreground mt-1">Alakulat</div></div><div class="bg-background p-5"><div class="font-display text-3xl text-primary">3 év</div><div class="stencil text-[10px] text-muted-foreground mt-1">Szolgálatban</div></div></div></div><div class="relative"><img src="images/heli-BdNjmf1F.jpg" alt="Katonai helikopter naplementében" width="1280" height="800" loading="lazy" class="w-full object-cover border border-border"><div class="absolute -bottom-6 -left-6 bg-card border border-border p-5 max-w-xs shadow-[var(--shadow-tactical)]"><div class="stencil text-xs text-primary mb-1">EXTRACTION</div><div class="text-sm text-muted-foreground">"Senkit nem hagyunk hátra. Ez nem szabály — ez törvény."</div><div class="stencil text-[10px] mt-3">— Cpt. Németh</div></div></div></div></section><section id="features" class="relative py-28"><div class="container mx-auto px-6"><div class="flex items-end justify-between flex-wrap gap-6 mb-14"><div><div class="stencil text-xs text-primary mb-3">// 02 — KAPACITÁS</div><h2 class="text-4xl md:text-5xl uppercase max-w-2xl">Amit az <span class="text-primary">O.N.R</span> kínál</h2></div><p class="max-w-md text-muted-foreground">Nem egy egyszerű roleplay szerver. Egy katonai szervezet, ahol a fegyelem, a kiképzés és a bajtársiasság minden egyes bevetésen megmutatkozik.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border"><div class="group bg-background p-8 hover:bg-card transition-colors"><div class="flex items-center justify-between mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crosshair h-7 w-7 text-primary" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="22" x2="18" y1="12" y2="12"></line><line x1="6" x2="2" y1="12" y2="12"></line><line x1="12" x2="12" y1="6" y2="2"></line><line x1="12" x2="12" y1="22" y2="18"></line></svg><span class="stencil text-[10px] text-muted-foreground">STD.</span></div><h3 class="stencil text-lg mb-3">Hiteles fegyverzet</h3><p class="text-sm text-muted-foreground leading-relaxed">Egyedi balansz, realisztikus visszarúgás, kalibervisszahúzódás, sérüléslokalizáció.</p></div><div class="group bg-background p-8 hover:bg-card transition-colors"><div class="flex items-center justify-between mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-7 w-7 text-primary" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg><span class="stencil text-[10px] text-muted-foreground">STD.</span></div><h3 class="stencil text-lg mb-3">Alakulati rendszer</h3><p class="text-sm text-muted-foreground leading-relaxed">Szakaszok, rajok, parancsnoki lánc. Mindenki tudja a helyét és a feladatát.</p></div><div class="group bg-background p-8 hover:bg-card transition-colors"><div class="flex items-center justify-between mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radio h-7 w-7 text-primary" aria-hidden="true"><path d="M16.247 7.761a6 6 0 0 1 0 8.478"></path><path d="M19.075 4.933a10 10 0 0 1 0 14.134"></path><path d="M4.925 19.067a10 10 0 0 1 0-14.134"></path><path d="M7.753 16.239a6 6 0 0 1 0-8.478"></path><circle cx="12" cy="12" r="2"></circle></svg><span class="stencil text-[10px] text-muted-foreground">STD.</span></div><h3 class="stencil text-lg mb-3">TFAR rádiózás</h3><p class="text-sm text-muted-foreground leading-relaxed">TaskForceRadio integráció, frekvenciák, titkosítás és háttércsatornák.</p></div><div class="group bg-background p-8 hover:bg-card transition-colors"><div class="flex items-center justify-between mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map h-7 w-7 text-primary" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg><span class="stencil text-[10px] text-muted-foreground">STD.</span></div><h3 class="stencil text-lg mb-3">Heti missziók</h3><p class="text-sm text-muted-foreground leading-relaxed">Felderítés, eskort, mentés, behatolás. Minden hét egy új hadszíntér.</p></div><div class="group bg-background p-8 hover:bg-card transition-colors"><div class="flex items-center justify-between mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench h-7 w-7 text-primary" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path></svg><span class="stencil text-[10px] text-muted-foreground">STD.</span></div><h3 class="stencil text-lg mb-3">Logisztika és LARP</h3><p class="text-sm text-muted-foreground leading-relaxed">Üzemanyag, lőszer, javítás, ellátmány. A háború adminisztráció is.</p></div><div class="group bg-background p-8 hover:bg-card transition-colors"><div class="flex items-center justify-between mb-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award h-7 w-7 text-primary" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg><span class="stencil text-[10px] text-muted-foreground">STD.</span></div><h3 class="stencil text-lg mb-3">Előléptetés érdemért</h3><p class="text-sm text-muted-foreground leading-relaxed">Nem az időért — a teljesítményért. Kitüntetések, szolgálati pontok.</p></div></div><div class="mt-20 relative overflow-hidden border border-border"><img src="images/convoy-CbSj828R.jpg" alt="Katonai konvoj naplementében" width="1280" height="800" loading="lazy" class="w-full h-[320px] md:h-[420px] object-cover"><div class="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent"></div><div class="absolute inset-0 flex items-center"><div class="container mx-auto px-6"><div class="max-w-lg"><div class="stencil text-xs text-primary mb-3">FIELD OPS</div><h3 class="text-3xl md:text-4xl uppercase mb-4">Egy konvoj. Egy küldetés.</h3><p class="text-muted-foreground">Minden bevetés tervezésen, briefingen és valós időben irányított végrehajtáson alapul. A káosz a tét — a fegyelem a fegyver.</p></div></div></div></div></div></section><section id="ranks" class="relative py-28 border-y border-border camo-bg"><div class="container mx-auto px-6"><div class="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center"><div class="relative"><div class="absolute -inset-2 border border-primary/30 pointer-events-none"></div><img src="images/soldier-DTqNM_J9.jpg" alt="Katona portré" width="1024" height="1280" loading="lazy" class="w-full h-[560px] object-cover grayscale-[0.3] contrast-110"><div class="absolute bottom-4 left-4 stencil text-xs bg-background/80 backdrop-blur px-3 py-2 border border-border"><div class="text-primary">ID-7741</div><div class="text-muted-foreground">Cpl. Kovács · 1.B</div></div></div><div><div class="stencil text-xs text-primary mb-3">// 03 — FRAKCIÓK</div><h2 class="text-4xl md:text-5xl uppercase mb-4">Jelentkezz egy <span class="text-primary">frakcióba</span></h2><p class="text-muted-foreground mb-10 max-w-lg">Válaszd ki, melyik ország katonaságát képviseled. Minden frakció saját parancsnoki láncot, felszerelést és doktrínát használ — a Discordon jelölheted a választásodat a toborzás során.</p><div class="divide-y divide-border border border-border"><div class="grid grid-cols-[48px_80px_180px_1fr] items-center gap-4 px-5 py-4 hover:bg-card transition-colors"><span class="text-2xl leading-none">🇺🇸</span><span class="stencil text-primary text-sm">USA</span><span class="stencil text-sm">U.S. Army</span><span class="text-sm text-muted-foreground">Gépesített gyalogság, légi mozgékonyság, különleges műveletek.</span></div><div class="grid grid-cols-[48px_80px_180px_1fr] items-center gap-4 px-5 py-4 hover:bg-card transition-colors"><span class="text-2xl leading-none">🇷🇺</span><span class="stencil text-primary text-sm">RUS</span><span class="stencil text-sm">Вооружённые силы</span><span class="text-sm text-muted-foreground">Páncélos doktrína, tüzérségi fölény, VDV ejtőernyősök.</span></div><div class="grid grid-cols-[48px_80px_180px_1fr] items-center gap-4 px-5 py-4 hover:bg-card transition-colors"><span class="text-2xl leading-none">🇭🇺</span><span class="stencil text-primary text-sm">HUN</span><span class="stencil text-sm">Magyar Honvédség</span><span class="text-sm text-muted-foreground">NATO-kompatibilis műveletek, könnyű gyalogság, KMH.</span></div><div class="grid grid-cols-[48px_80px_180px_1fr] items-center gap-4 px-5 py-4 hover:bg-card transition-colors"><span class="text-2xl leading-none">🇬🇧</span><span class="stencil text-primary text-sm">GBR</span><span class="stencil text-sm">British Army</span><span class="text-sm text-muted-foreground">Royal Marines, SAS hagyományok, professzionális kiképzés.</span></div><div class="grid grid-cols-[48px_80px_180px_1fr] items-center gap-4 px-5 py-4 hover:bg-card transition-colors"><span class="text-2xl leading-none">🇩🇪</span><span class="stencil text-primary text-sm">DEU</span><span class="stencil text-sm">Bundeswehr</span><span class="text-sm text-muted-foreground">Precíz logisztika, KSK különleges erők, pán­célos egységek.</span></div><div class="grid grid-cols-[48px_80px_180px_1fr] items-center gap-4 px-5 py-4 hover:bg-card transition-colors"><span class="text-2xl leading-none">🇫🇷</span><span class="stencil text-primary text-sm">FRA</span><span class="stencil text-sm">Armée française</span><span class="text-sm text-muted-foreground">Légió, gyors reagálás, expedíciós műveletek.</span></div></div></div></div></div></section><section id="join" class="relative py-28 overflow-hidden"><div class="absolute inset-0 camo-bg opacity-40"></div><div class="relative container mx-auto px-6"><div class="text-center max-w-2xl mx-auto mb-16"><div class="stencil text-xs text-primary mb-3">// 04 — TOBORZÁS</div><h2 class="text-4xl md:text-6xl uppercase mb-4">Készen állsz <span class="text-primary">bevonulni?</span></h2><p class="text-muted-foreground">Négy lépés. Egy hét. És része vagy az egyik legkomolyabb magyar milsim közösségnek.</p></div><div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border max-w-6xl mx-auto"><div class="bg-background p-7 relative"><div class="font-display text-5xl text-primary/30 mb-4">01</div><h3 class="stencil text-base mb-2">Discord belépés</h3><p class="text-sm text-muted-foreground">Csatlakozz a hivatalos szerverhez és olvasd el a szabályokat.</p></div><div class="bg-background p-7 relative"><div class="font-display text-5xl text-primary/30 mb-4">02</div><h3 class="stencil text-base mb-2">Toborzó interjú</h3><p class="text-sm text-muted-foreground">Rövid beszélgetés a toborzótiszttel — ki vagy, mit keresel.</p></div><div class="bg-background p-7 relative"><div class="font-display text-5xl text-primary/30 mb-4">03</div><h3 class="stencil text-base mb-2">Alapkiképzés</h3><p class="text-sm text-muted-foreground">Mozgás, kommunikáció, fegyverhasználat. Két este, két óra.</p></div><div class="bg-background p-7 relative"><div class="font-display text-5xl text-primary/30 mb-4">04</div><h3 class="stencil text-base mb-2">Első bevetés</h3><p class="text-sm text-muted-foreground">Élesben az egységgel. Üdvözlünk az O.N.R-nél.</p></div></div><div class="mt-16 max-w-xl mx-auto bg-card border border-border p-10 text-center"><h3 class="stencil text-xl mb-3">Briefing letöltése</h3><p class="text-sm text-muted-foreground mb-6">Csatlakozz a Discordhoz és nyisd meg a #toborzás csatornát.</p><a href="https://discord.gg/CJ5H9yeevR" target="_blank" rel="noopener noreferrer" class="group stencil inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 hover:opacity-90 transition">Discord meghívó<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-4 w-4 group-hover:translate-x-1 transition" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a><div class="mt-6 stencil text-[11px] text-muted-foreground">Korhatár: 16+ · Mikrofon kötelező · Heti 2 este aktivitás</div></div></div></section></main><footer class="border-t border-border bg-card/40"><div class="container mx-auto px-6 py-12 grid md:grid-cols-3 gap-8"><div><div class="flex items-center gap-2.5 mb-4"><div class="grid h-9 w-9 place-items-center bg-primary text-primary-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield h-5 w-5" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div><div class="stencil">O.N.R</div></div><p class="text-sm text-muted-foreground max-w-xs">Hungarian military milsim roleplay community. FiveM platform. Authentic. Disciplined. Brotherly.</p></div><div><div class="stencil text-xs text-primary mb-4">Navigáció</div><ul class="space-y-2 text-sm text-muted-foreground"><li><a href="#about" class="hover:text-primary">Az alakulat</a></li><li><a href="#features" class="hover:text-primary">Lehetőségek</a></li><li><a href="#ranks" class="hover:text-primary">Rangrend</a></li><li><a href="#join" class="hover:text-primary">Csatlakozás</a></li></ul></div><div><div class="stencil text-xs text-primary mb-4">Kapcsolat</div><ul class="space-y-2 text-sm text-muted-foreground"><li>Discord: <a href="https://discord.gg/CJ5H9yeevR" target="_blank" rel="noopener noreferrer" class="hover:text-primary">discord.gg/CJ5H9yeevR</a></li><li>FiveM: connect O.N.R server</li><li>E-mail: command@onr.milsim</li></ul></div></div><div class="border-t border-border"><div class="container mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-3 stencil text-[11px] text-muted-foreground"><span>© 2026 Operation Northern Resolve · All rights reserved</span><span>// CLASSIFIED · UNOFFICIAL · FOR MILSIM PURPOSES ONLY</span></div></div></footer></div><!--/$--><script type="module" async="">import("/assets/index-BOUABeE9.js")</script>
+<script>
+// ============================================================
+//  O.N.R – Live Stats: Discord tagok & FiveM online játékosok
+//  Struktúra: "DISCORD: <span class="text-foreground">— / —</span>"
+// ============================================================
+(function () {
+  var DISCORD_GUILD_ID = '1505613691419099137';
+  var FIVEM_JOIN_CODE  = 'zjv6jx4';
+
+  // Megtalálja a "DISCORD:" vagy "FIVEM:" szöveget tartalmazó div-et,
+  // majd visszaadja a benne lévő .text-foreground span-t
+  function getStatSpan(keyword) {
+    var all = document.querySelectorAll('div, span, p');
+    for (var i = 0; i < all.length; i++) {
+      var el = all[i];
+      // Csak akkor egyezzen, ha a közvetlen szöveg tartalmazza a kulcsszót
+      // (ne menjen bele a gyerek elemekbe)
+      var directText = '';
+      for (var n = 0; n < el.childNodes.length; n++) {
+        if (el.childNodes[n].nodeType === 3) { // TEXT_NODE
+          directText += el.childNodes[n].textContent;
+        }
+      }
+      if (directText.toUpperCase().indexOf(keyword.toUpperCase()) !== -1) {
+        var span = el.querySelector('.text-foreground');
+        if (span) return span;
+      }
+    }
+    return null;
+  }
+
+  function setSpanValue(span, value) {
+    if (!span) return;
+    // Töröljük a belső tartalmát (— / — comment node-okkal együtt)
+    while (span.firstChild) span.removeChild(span.firstChild);
+    span.textContent = value;
+  }
+
+  // ── Discord Widget API ───────────────────────────────────────
+  function fetchDiscord() {
+    fetch('https://discord.com/api/guilds/' + DISCORD_GUILD_ID + '/widget.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var online = data.presence_count !== undefined ? data.presence_count : '?';
+        var span = getStatSpan('DISCORD');
+        setSpanValue(span, online + ' online');
+      })
+      .catch(function(err) {
+        console.warn('[ONR] Discord widget hiba:', err);
+        var span = getStatSpan('DISCORD');
+        setSpanValue(span, '— widget off');
+      });
+  }
+
+  // ── FiveM CFX API ────────────────────────────────────────────
+  function fetchFiveM() {
+    fetch('https://servers-frontend.fivem.net/api/servers/single/' + FIVEM_JOIN_CODE)
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var sv = data.Data || data;
+        var players    = sv.clients !== undefined ? sv.clients
+                       : (Array.isArray(sv.players) ? sv.players.length : '?');
+        var maxPlayers = sv.sv_maxclients !== undefined ? sv.sv_maxclients
+                       : (sv.vars && sv.vars.sv_maxClients ? sv.vars.sv_maxClients : '?');
+        var span = getStatSpan('FIVEM');
+        setSpanValue(span, players + ' / ' + maxPlayers);
+      })
+      .catch(function(err) {
+        console.warn('[ONR] FiveM API hiba:', err);
+        var span = getStatSpan('FIVEM');
+        setSpanValue(span, '0 / ?');
+      });
+  }
+
+  // ── Indítás ──────────────────────────────────────────────────
+  function init() {
+    fetchDiscord();
+    fetchFiveM();
+    setInterval(fetchDiscord, 30000);
+    setInterval(fetchFiveM,   30000);
+  }
+
+  // React renderelés után fut (1.5mp késleltetés)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { setTimeout(init, 1500); });
+  } else {
+    setTimeout(init, 1500);
+  }
+})();
+</script>
+<aside id="lovable-badge" role="complementary" dir="ltr" lang="en" aria-label="Edit with Lovable">
+	<a id="lovable-badge-cta" target="_blank" href="https://lovable.dev/projects/10948361-038c-4a5a-84a6-0d9d46feaecf?utm_source=lovable-badge" rel="noopener nofollow" aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"></path>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"></path>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"></path>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"></stop>
+      <stop offset=".394" stop-color="#FE3F21"></stop>
+      <stop offset=".608" stop-color="#F858BC"></stop>
+      <stop offset=".929" stop-color="#575ECF"></stop>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button id="lovable-badge-close" aria-label="Dismiss" title="Dismiss" type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"></path>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		// the page is in an iframe
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+</body></html>
